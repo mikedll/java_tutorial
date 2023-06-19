@@ -16,7 +16,7 @@ public class LoggingConfigurationFactory extends ConfigurationFactory {
     static Configuration createConfiguration(final String name, ConfigurationBuilder<BuiltConfiguration> builder) {
         // return new DefaultConfiguration();
         builder.setConfigurationName(name);
-        builder.setStatusLevel(Level.DEBUG);
+        builder.setStatusLevel(Level.INFO);
 
         builder.add(builder.newLogger("org.apache.hc.client5.http.headers", Level.DEBUG));
         // builder.add(builder.newLogger("org.apache.hc.client5.http", Level.DEBUG));
