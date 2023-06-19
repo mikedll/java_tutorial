@@ -12,12 +12,16 @@ import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
 import org.apache.hc.client5.http.impl.classic.HttpClients;
 import org.apache.hc.core5.http.io.entity.EntityUtils;
 import org.apache.hc.core5.http.message.StatusLine;
+import org.apache.logging.log4j.core.config.ConfigurationFactory;
 
 public class Application {
 
-    static final Logger logger = LoggerFactory.getLogger(Application.class);
+    static Logger logger;
     
     public static void main(String[] args) {
+        ConfigurationFactory.setConfigurationFactory(new LoggingConfigurationFactory());
+
+        logger = LoggerFactory.getLogger(Application.class);
         logger.info("Entering application.");
          
         System.out.println("Hello everyone");
