@@ -21,6 +21,24 @@
             <artifactId>javatuples</artifactId>
             <version>1.2</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents.client5</groupId>
+            <artifactId>httpclient5</artifactId>
+            <version>5.2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>1.7.32</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.6</version>
+        </dependency>        
     </dependencies>
 
     <build>
@@ -54,7 +72,7 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
-                            <mainClass>com.mikedll.java_tutorial.Application</mainClass>
+                            <mainClass>com.mikedll.javatutorial.Application</mainClass>
                             <includePluginDependencies>true</includePluginDependencies>
                         </configuration>
                     </execution>
