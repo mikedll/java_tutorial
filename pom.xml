@@ -54,7 +54,7 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
-                            <mainClass>com.mikedll.java_tutorial.Application</mainClass>
+                            <mainClass>com.mikedll.javatutorial.Application</mainClass>
                             <includePluginDependencies>true</includePluginDependencies>
                         </configuration>
                     </execution>

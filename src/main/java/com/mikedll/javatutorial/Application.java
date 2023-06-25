@@ -1,4 +1,4 @@
-package com.mikedll.java_tutorial;
+package com.mikedll.javatutorial;
 
 import java.util.List;
 import java.util.Optional;
